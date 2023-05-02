@@ -9,15 +9,16 @@ const Bored = (props) => {
     return (
         <>
         <h2>Click the button to eliminate your boredom!</h2>
+        <h2>Here's an idea, {props.newIdea}</h2>
         <button onClick={props.boredAction}>Click Me!</button>
-        <p>{props.newIdea}</p>
+        
         </>
     )
 }
 
 const mapStateToProps = state => {
     return {
-        idea: state.newIdea
+        newIdea: state.newIdea
     };
 };
 
