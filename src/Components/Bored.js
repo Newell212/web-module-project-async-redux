@@ -8,9 +8,9 @@ import {boredAction} from '../actions/boredActions'
 const Bored = (props) => {
     return (
         <>
-        <h2>Click the button to eliminate your boredom!</h2>
-        <h2>Here's an idea, {props.newIdea}</h2>
-        <button onClick={props.boredAction}>Click Me!</button>
+        <h2 className='bored'>Click the button to eliminate your boredom!</h2>
+        <h2 className='idea'>Here's an idea, {props.newIdea}</h2>
+        <button className='bored-button'onClick={props.boredAction}>Click Me!</button>
         
         </>
     )
