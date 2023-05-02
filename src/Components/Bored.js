@@ -17,9 +17,9 @@ const Bored = (props) => {
 
 const mapStateToProps = state => {
     return {
-        newIdea: state.newIdea
-    }
-}
+        idea: state.newIdea
+    };
+};
 
 
 export default connect(mapStateToProps, {boredAction})(Bored);
