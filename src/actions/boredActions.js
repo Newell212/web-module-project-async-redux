@@ -8,6 +8,9 @@ export const boredAction = () => dispatch => {
     .then(res => {
         console.log(res)
     })
+    .catch(err => {
+        console.err(err);
+    })
 }
 
 export const getNewIdea = newIdea => ({

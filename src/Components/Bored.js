@@ -10,7 +10,7 @@ const Bored = (props) => {
         <>
         <h2>Click the button to eliminate your boredom!</h2>
         <button onClick={props.boredAction}>Click Me!</button>
-        
+        <p>{props.newIdea}</p>
         </>
     )
 }

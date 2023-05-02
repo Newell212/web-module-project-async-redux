@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import {boredReducer} from './reducers/boredReducer';
 import App from './App';
 import './index.css';
 
-const store = createStore(reducer);
+const store = createStore(boredReducer);
 
 ReactDOM.render(
   <Provider store={store}>

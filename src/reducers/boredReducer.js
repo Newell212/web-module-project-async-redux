@@ -1,4 +1,4 @@
-
+import {GET_NEW_IDEA} from '../actions/boredActions';
 
 const initialState = {
     newIdea: ''
